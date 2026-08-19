@@ -1,8 +1,12 @@
 import Link from "next/link";
+import WebsiteSchema from "./components/WebsiteSchema";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 scroll-smooth">
+      {/* Google WebSite Structured Data */}
+      <WebsiteSchema />
+
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -60,14 +64,14 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-              Partner with SuperRide and{" "}
-              <span className="text-blue-600">grow your business.</span>
+              SuperRide Partner —{" "}
+              <span className="text-blue-600">Grow Your Business</span>
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Whether you drive a taxi, manage a delivery fleet, or own a hotel
-              or homestay, SuperRidePartner connects you directly with customers
-              in your area.
+              SuperRide Partner connects taxi drivers, cab operators, delivery 
+              couriers, hotels, and homestays directly with local customers in 
+              your area.
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -95,13 +99,13 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
-                About SuperRidePartner
+                About SuperRide Partner
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
                 Empowering local service providers across travel & logistics.
               </h2>
               <p className="mt-4 text-base leading-7 text-slate-600">
-                SuperRidePartner is designed to help service providers earn more
+                SuperRide Partner is designed to help service providers earn more
                 and stay in control. From local taxi drivers and parcel couriers
                 to hotel and homestay owners, our platform offers a unified space
                 to accept bookings and expand your operational reach.
@@ -332,7 +336,7 @@ export default function Home() {
             </p>
           </div>
 
-          <form className="mt-10 space-y-4 rounded-2xl bg-slate-800/50 p-6 border border-slate-700/50">
+          <form className="mt-10 space-y-4 rounded-2xl border border-slate-700/50 bg-slate-800/50 p-6">
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
                 <label className="block text-xs font-semibold uppercase text-slate-300">
@@ -400,7 +404,7 @@ export default function Home() {
           <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
             <div>
               <div className="text-lg font-bold">
-                Super<span className="text-blue-600">Ride</span>Partner
+                Super<span className="text-blue-600">Ride</span> Partner
               </div>
               <p className="mt-1 text-xs text-slate-500">
                 Partner network platform for rides, deliveries, and stays.
@@ -408,15 +412,25 @@ export default function Home() {
             </div>
 
             <div className="flex flex-wrap gap-6 text-sm font-medium text-slate-600">
-              <a href="#about" className="hover:text-blue-600">About</a>
-              <a href="#services" className="hover:text-blue-600">Services</a>
-              <a href="#how-it-works" className="hover:text-blue-600">How It Works</a>
-              <a href="#benefits" className="hover:text-blue-600">Benefits</a>
-              <a href="#faq" className="hover:text-blue-600">FAQ</a>
+              <a href="#about" className="hover:text-blue-600">
+                About
+              </a>
+              <a href="#services" className="hover:text-blue-600">
+                Services
+              </a>
+              <a href="#how-it-works" className="hover:text-blue-600">
+                How It Works
+              </a>
+              <a href="#benefits" className="hover:text-blue-600">
+                Benefits
+              </a>
+              <a href="#faq" className="hover:text-blue-600">
+                FAQ
+              </a>
             </div>
 
             <div className="text-xs text-slate-400">
-              © {new Date().getFullYear()} SuperRidePartner. All rights reserved.
+              © {new Date().getFullYear()} SuperRide Partner. All rights reserved.
             </div>
           </div>
         </div>
@@ -425,12 +439,20 @@ export default function Home() {
   );
 }
 
-function StepCard({ number, title, desc }: { number: string; title: string; desc: string }) {
+function StepCard({
+  number,
+  title,
+  desc,
+}: {
+  number: string;
+  title: string;
+  desc: string;
+}) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
       <span className="text-xs font-bold text-blue-600">{number}</span>
       <h3 className="mt-2 font-bold text-slate-900">{title}</h3>
-      <p className="mt-1 text-xs text-slate-500 leading-relaxed">{desc}</p>
+      <p className="mt-1 text-xs leading-relaxed text-slate-500">{desc}</p>
     </div>
   );
 }
@@ -448,7 +470,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
       <h3 className="font-bold text-slate-900">{question}</h3>
-      <p className="mt-2 text-sm text-slate-600 leading-relaxed">{answer}</p>
+      <p className="mt-2 text-sm leading-relaxed text-slate-600">{answer}</p>
     </div>
   );
 }
