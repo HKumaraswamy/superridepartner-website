@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://superridepartner.vercel.app"),
 
   title: {
-    default: "Super Ride Partner | Become a Ride Partner",
-    template: "%s | Super Ride Partner",
+    default: "SuperRide Partner | Taxi, Parcel & Hotel Partners",
+    template: "%s | SuperRide Partner",
   },
 
   description:
-    "Super Ride Partner helps Bike, Auto and Cab drivers find rides, earn more and manage their driving work with flexible hours.",
+    "Join SuperRide Partner for taxi rides, parcel delivery and hotel services. Connect with customers, manage bookings and grow your local business.",
 
   keywords: [
     "Super Ride Partner",
@@ -35,15 +35,15 @@ export const metadata: Metadata = {
     "Super RideX",
   ],
 
-  applicationName: "Super Ride Partner",
+  applicationName: "SuperRide Partner",
 
   authors: [
     {
-      name: "Super Ride Partner",
+      name: "SuperRide Partner",
     },
   ],
 
-  creator: "Super Ride Partner",
+  creator: "SuperRide Partner",
 
   robots: {
     index: true,
@@ -61,17 +61,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://superridepartner.vercel.app",
-    siteName: "Super Ride Partner",
-    title: "Super Ride Partner | Become a Ride Partner",
+    siteName: "SuperRide Partner",
+    title: "SuperRide Partner | Taxi, Parcel & Hotel Partners",
     description:
-      "Join Super Ride Partner and get ride opportunities for Bike, Auto and Cab services.",
+      "Join SuperRide Partner for taxi rides, parcel delivery and hotel services. Connect with customers and grow your local business.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Super Ride Partner | Become a Ride Partner",
+    title: "SuperRide Partner | Taxi, Parcel & Hotel Partners",
     description:
-      "Join Super Ride Partner and start accepting rides with flexible working options.",
+      "Join SuperRide Partner for taxi rides, parcel delivery and hotel services.",
   },
 
   alternates: {
