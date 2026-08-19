@@ -21,18 +21,20 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Join SuperRide Partner for taxi rides, parcel delivery and hotel services. Connect with customers, manage bookings and grow your local business.",
+    "SuperRide Partner helps taxi, bike, auto, cab, parcel delivery, hotel and homestay partners connect with customers and grow their business.",
 
   keywords: [
-    "Super Ride Partner",
     "SuperRide Partner",
-    "ride partner",
-    "bike taxi driver",
-    "auto driver",
-    "cab driver",
-    "driver partner",
-    "ride booking driver",
-    "Super RideX",
+    "SuperRidePartner",
+    "Super Ride Partner",
+    "SuperRide",
+    "taxi partner",
+    "bike taxi partner",
+    "auto driver partner",
+    "cab driver partner",
+    "parcel delivery partner",
+    "hotel partner",
+    "homestay partner",
   ],
 
   applicationName: "SuperRide Partner",
@@ -44,6 +46,8 @@ export const metadata: Metadata = {
   ],
 
   creator: "SuperRide Partner",
+
+  publisher: "SuperRide Partner",
 
   robots: {
     index: true,
@@ -57,25 +61,25 @@ export const metadata: Metadata = {
     },
   },
 
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://superridepartner.vercel.app",
+    url: "https://superridepartner.vercel.app/",
     siteName: "SuperRide Partner",
     title: "SuperRide Partner | Taxi, Parcel & Hotel Partners",
     description:
-      "Join SuperRide Partner for taxi rides, parcel delivery and hotel services. Connect with customers and grow your local business.",
+      "Join SuperRide Partner for taxi rides, parcel delivery, parcel services and hotel partnerships.",
   },
 
   twitter: {
     card: "summary_large_image",
     title: "SuperRide Partner | Taxi, Parcel & Hotel Partners",
     description:
-      "Join SuperRide Partner for taxi rides, parcel delivery and hotel services.",
-  },
-
-  alternates: {
-    canonical: "https://superridepartner.vercel.app/",
+      "Join SuperRide Partner for taxi, parcel delivery and hotel partnership services.",
   },
 };
 
